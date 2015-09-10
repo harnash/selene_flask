@@ -58,3 +58,9 @@ target/
 
 # virtualenv
 .venv/
+
+# IDE
+.idea/
+
+# SQLite
+*.sqlite

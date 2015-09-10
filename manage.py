@@ -16,6 +16,10 @@ def create_app(debug, config=None):
     app.debug = False
     print("CONFIG", config)
 
+    import os
+    os.environ['DEBUG'] = 'true'
+    os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = 'true'
+
     if config is not None:
         app.config.from_pyfile(config)
     else:

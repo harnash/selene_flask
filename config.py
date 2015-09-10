@@ -1,15 +1,12 @@
-from authomatic.providers import oauth2, oauth1
+from authomatic.providers import oauth2
 
 CONFIG = {
-    
-    'tw': {# Your internal provider name
-           
-        # Provider class
-        'class_': oauth1.Twitter,
-        
-        # Twitter is an AuthorizationProvider so we need to set several other properties too:
-        'consumer_key': '########################',
-        'consumer_secret': '########################',
+    'oauth': {
+        'class_': oauth2.OAuth2,
+
+        'consumer_key': 'dddefdffgfdg',
+        'consumer_servret': 'sf4445',
+        'short_name': 'wikia',
     },
     
     'fb': {
